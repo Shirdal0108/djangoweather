@@ -66,8 +66,7 @@ def home(request):
         elif api[0]['Category']['Name'] == "Hazardous": 
             category_description = "(301 - 500) Health warnings of emergency conditions. The entire population is more likely to be affected."
             category_color = "hazardous" 
-           
-
+    
         return render(request, 'home.html', {'api': api, 
         'category_description': category_description,
         'category_color': category_color})

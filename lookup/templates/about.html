@@ -2,6 +2,42 @@
 
 {% block content %}
 
-<h1>About this...</h1>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Category</th>
+        <th scope="col" style="text-align:center">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Good</th>
+        <td>(0 - 50) Air quality is considered satisfactory, and air pollution poses little or no risk.</td>
+      </tr>
+      <tr>
+        <th scope="row">Moderate</th>
+        <td>(51 - 100) Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution.</td>
+      </tr>
+      <tr>
+        <th scope="row">USG</th>
+        <td>(101 - 150) Although general public is not likely to be affected at this AQI range, people with lung disease, older adults and children are at a greater risk from exposure to ozone, whereas persons with heart and lung disease, older adults and children are at greater risk from the presence of particles in the air.</td>
+      </tr>
+      <tr>
+        <th scope="row">Unhealthy</th>
+        <td>(150 -200) Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects.</td>
+      </tr>
+      <tr>
+        <th scope="row">Very Unhealthy</th>
+        <td>(201 - 300) Health alert: everyone may experience more serious health effects.</td>
+      </tr>
+      <tr>
+        <th scope="row">Hazardous</th>
+        <td>(301 - 500) Health warnings of emergency conditions. The entire population is more likely to be affected.</td>
+      </tr>
+    </tbody>
+  </table>
+  
 
-{% endblock %}
+
+
+ {% endblock %}
