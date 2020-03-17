@@ -8,10 +8,7 @@
     {{ zipcode }}
 {% endif %}    
 
-{% if api %}
-    {% if api == "Error..." %}
-        There was an error, please try again...
-    {% else %}  
+
     
 <div class="jumbotron {{ category_color }}">
     <h1 class="display-4">{{ api.0.Category.Name }}</h1>
@@ -21,10 +18,6 @@
 </div>
             
    
-    {% endif %}
-
-{% endif %}
-
-
+   
 
 {% endblock %}
